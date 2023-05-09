@@ -1,3 +1,6 @@
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { CgFacebook } from 'react-icons/cg';
+import { FaShoppingCart, FaTwitter } from 'react-icons/fa';
 import styles from './App.module.scss';
 
 export default function App() {
@@ -23,11 +26,20 @@ export default function App() {
                 <a href="/#">Contact</a>
               </li>
             </ul>
-            <div>
-              <a href="/#">Icon</a>
-              <a href="/#">Icon</a>
-              <a href="/#">Icon</a>
-              <a href="/#">Icon</a>
+            <div className={styles.iconContainer}>
+              <a href="/#">
+                <AiOutlineInstagram size="1.3rem" />
+              </a>
+              <a href="/#">
+                <CgFacebook size="1.3rem" />
+              </a>
+              <a href="/#">
+                <FaTwitter size="1.3rem" />
+              </a>
+              <a href="/#">
+                <FaShoppingCart size="1.3rem" />
+                <span>0</span>
+              </a>
             </div>
           </nav>
         </header>
