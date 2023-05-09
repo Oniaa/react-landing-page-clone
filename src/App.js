@@ -31,16 +31,23 @@ export default function App() {
         </nav>
       </header>
       <main>
-        <section className={styles.heroPage}>
-          <h1>
-            Plants and Pots
-            <br />
-            For Your Home
-          </h1>
-          <a href="/#">
-            <span>Shop Now</span>
-          </a>
+        <section className={styles.backgroundImg}>
+          <div className={styles.heroPage}>
+            <h1>
+              Plants and Pots
+              <br />
+              For Your Home
+            </h1>
+            <a href="/#">
+              <span>Shop Now</span>
+            </a>
+          </div>
         </section>
+        <section className={styles.secondSection}></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
       </main>
       <footer>Footer</footer>
     </>
