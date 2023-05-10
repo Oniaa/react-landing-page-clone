@@ -100,7 +100,7 @@ export default function App() {
               Flowering plants are stunning, but require a bit more work than
               their non-flowering brethren. Learn how to keep them happy.
             </p>
-            <a>
+            <a href="/#">
               <span>Read More</span>
             </a>
           </div>
@@ -111,16 +111,39 @@ export default function App() {
               If you have a sunny windowsill, you can be a succulent owner.
               These hardy and beautiful plants are as easy as they come.
             </p>
-            <a>
+            <a href="/#">
               <span>Read More</span>
             </a>
           </div>
         </div>
       </section>
-      <section>
-        <div></div>
+      <section className={styles.fifthSection}>
+        <div className={styles.fifthSectionBackground}>
+          <h3 className={styles.h3}>They grow up so fast.</h3>
+          <p>Dont miss a thing. Sign up to receive news and updates.</p>
+          <div className={styles.emailContainer}>
+            <input type="email" placeholder="Email Address" />
+            <a href="/#" className={styles.button}>
+              <span>Sign Up</span>
+            </a>
+          </div>
+        </div>
       </section>
-      <section></section>
+      <section className={styles.sixtSection}>
+        <img />
+        <div>
+          <h2>Give the Gift of Greenery</h2>
+          <p>
+            Plants are as thoughtful a gift as flowers and last much longer.
+            With a gift card, you can brighten up someone’s home, office or dorm
+            room with a potted plant of their choice. They’re available in any
+            denomination and we’ll mail it for free!
+          </p>
+          <a href="/#">
+            <span>Purchase Gift Card</span>
+          </a>
+        </div>
+      </section>
 
       <footer>Footer</footer>
     </>
