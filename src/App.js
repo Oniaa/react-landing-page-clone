@@ -3,6 +3,7 @@ import { CgFacebook } from 'react-icons/cg';
 import { FaShoppingCart, FaTwitter } from 'react-icons/fa';
 import styles from './App.module.scss';
 import BiggerStatements from './images/BiggerStatements.jpg';
+import giftCard from './images/giftCard.jpg';
 import LilGuys from './images/LilGuys.jpg';
 import LowMaintenance from './images/LowMaintenance.jpg';
 import plant1 from './images/plant1.gif';
@@ -130,18 +131,20 @@ export default function App() {
         </div>
       </section>
       <section className={styles.sixtSection}>
-        <img />
-        <div>
-          <h2>Give the Gift of Greenery</h2>
-          <p>
-            Plants are as thoughtful a gift as flowers and last much longer.
-            With a gift card, you can brighten up someone’s home, office or dorm
-            room with a potted plant of their choice. They’re available in any
-            denomination and we’ll mail it for free!
-          </p>
-          <a href="/#">
-            <span>Purchase Gift Card</span>
-          </a>
+        <div className={styles.sixtSectContainer}>
+          <img src={giftCard} />
+          <div>
+            <h2 className={styles.h2}>Give the Gift of Greenery</h2>
+            <p>
+              Plants are as thoughtful a gift as flowers and last much longer.
+              With a gift card, you can brighten up someone’s home, office or
+              dorm room with a potted plant of their choice. They’re available
+              in any denomination and we’ll mail it for free!
+            </p>
+            <a href="/#">
+              <span>Purchase Gift Card</span>
+            </a>
+          </div>
         </div>
       </section>
 
