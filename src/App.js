@@ -2,6 +2,9 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { CgFacebook } from 'react-icons/cg';
 import { FaShoppingCart, FaTwitter } from 'react-icons/fa';
 import styles from './App.module.scss';
+import BiggerStatements from './images/BiggerStatements.jpg';
+import LilGuys from './images/LilGuys.jpg';
+import LowMaintenance from './images/LowMaintenance.jpg';
 
 export default function App() {
   return (
@@ -54,8 +57,33 @@ export default function App() {
           </a>
         </section>
       </div>
-      <section className={styles.secondSection}></section>
-      <section></section>
+      <section className={styles.secondSection}>
+        <h2 className={styles.h2}>Fan Favorites</h2>
+        <div className={styles.secondSectionImg}>
+          <div className={styles.imgColumn}>
+            <img src={LilGuys} alt="Lil Guys" />
+            <h3 className={styles.h3}>Lil' Guys</h3>
+            <a href="/#" className={styles.button}>
+              <span>Buy Now</span>
+            </a>
+          </div>
+          <div className={styles.imgColumn}>
+            <img src={BiggerStatements} alt="Bigger Statements" />
+            <h3 className={styles.h3}>Bigger Statements</h3>
+            <a href="/#" className={styles.button}>
+              <span>Buy Now</span>
+            </a>
+          </div>
+          <div className={styles.imgColumn}>
+            <img src={LowMaintenance} alt="Low Maintenance" />
+            <h3 className={styles.h3}>Low Maintenance</h3>
+            <a href="/#" className={styles.button}>
+              <span>Buy Now</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className={styles.thirdSection}></section>
       <section></section>
       <section></section>
       <section></section>
