@@ -1,7 +1,8 @@
-import { AiOutlineInstagram } from 'react-icons/ai';
+/* import { AiOutlineInstagram } from 'react-icons/ai';
 import { CgFacebook } from 'react-icons/cg';
-import { FaShoppingCart, FaTwitter } from 'react-icons/fa';
+import { FaShoppingCart, FaTwitter } from 'react-icons/fa'; */
 import styles from './App.module.scss';
+import HeroPage from './HeroPage';
 import BiggerStatements from './images/BiggerStatements.jpg';
 import giftCard from './images/giftCard.jpg';
 import LilGuys from './images/LilGuys.jpg';
@@ -12,7 +13,7 @@ import plant2 from './images/plant2.gif';
 export default function App() {
   return (
     <>
-      <div className={styles.backgroundContainer}>
+      {/* <div className={styles.backgroundContainer}>
         <header>
           <nav className={styles.navigationBar}>
             <a href="/#">
@@ -59,7 +60,8 @@ export default function App() {
             <span>Shop Now</span>
           </a>
         </section>
-      </div>
+      </div> */}
+      <HeroPage />
       <section className={styles.secondSection}>
         <h2 className={styles.h2}>Fan Favorites</h2>
         <div className={styles.secondSecContainer}>
