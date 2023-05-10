@@ -5,6 +5,8 @@ import styles from './App.module.scss';
 import BiggerStatements from './images/BiggerStatements.jpg';
 import LilGuys from './images/LilGuys.jpg';
 import LowMaintenance from './images/LowMaintenance.jpg';
+import plant1 from './images/plant1.gif';
+import plant2 from './images/plant2.gif';
 
 export default function App() {
   return (
@@ -59,7 +61,7 @@ export default function App() {
       </div>
       <section className={styles.secondSection}>
         <h2 className={styles.h2}>Fan Favorites</h2>
-        <div className={styles.secondSectionImg}>
+        <div className={styles.secondSecContainer}>
           <div className={styles.imgColumn}>
             <img src={LilGuys} alt="Lil Guys" />
             <h3 className={styles.h3}>Lil' Guys</h3>
@@ -88,8 +90,36 @@ export default function App() {
           <span>Pseudo Content</span>
         </div>
       </section>
-      <section></section>
-      <section></section>
+      <section className={styles.fourthSection}>
+        <h2 className={styles.h2}>The Journal</h2>
+        <div className={styles.fourthSecContainer}>
+          <div className={styles.imgColumn}>
+            <img src={plant1} alt="Plant Gif" />
+            <h3 className={styles.h3}>Is It Flowers Youre After?</h3>
+            <p>
+              Flowering plants are stunning, but require a bit more work than
+              their non-flowering brethren. Learn how to keep them happy.
+            </p>
+            <a>
+              <span>Read More</span>
+            </a>
+          </div>
+          <div className={styles.imgColumn}>
+            <img src={plant2} alt="Plant Gif" />
+            <h3 className={styles.h3}>Searching for Succulents?</h3>
+            <p>
+              If you have a sunny windowsill, you can be a succulent owner.
+              These hardy and beautiful plants are as easy as they come.
+            </p>
+            <a>
+              <span>Read More</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div></div>
+      </section>
       <section></section>
 
       <footer>Footer</footer>
