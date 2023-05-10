@@ -133,3 +133,23 @@
     }
   }
 }
+
+.thirdSection {
+  min-height: 100vh;
+
+  .thirdSectionBackground {
+    background-image: url('./images/SecBackgroundImg.jpg');
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  span {
+    color: transparent;
+  }
+}

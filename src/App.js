@@ -83,7 +83,11 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className={styles.thirdSection}></section>
+      <section className={styles.thirdSection}>
+        <div className={styles.thirdSectionBackground}>
+          <span>Pseudo Content</span>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <section></section>
