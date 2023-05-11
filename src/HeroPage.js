@@ -26,7 +26,7 @@ export default function HeroPage() {
       }`}
     >
       <header className={styles.header}>
-        <nav className={styles.navigationBar}>
+        <nav className={`${styles.navigationBar} ${isScrolled && styles.hide}`}>
           <a href="/#">
             <span>Crosby</span>
           </a>

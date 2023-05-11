@@ -24,11 +24,24 @@
   right: 0;
   z-index: 2;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
 
-  &.scrolled {
-    top: 0;
+  &.hide {
     opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    animation-name: hideNavbar;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+
+  @keyframes hideNavbar {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 
   a {
